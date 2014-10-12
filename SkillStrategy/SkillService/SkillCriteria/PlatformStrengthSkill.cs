@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SkillService.SkillParameter;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace SkillService.SkillCriteria
 {
-    public class PlatformStrengthSkill : ISkills
+    public class PlatformStrengthSkill : ISkills//Skills
     {
-        public void Evaluate()
+        public Dictionary<string, int> FormulateScore(IEntity entity)
         {
             throw new NotImplementedException();
         }

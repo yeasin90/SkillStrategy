@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SkillService.SkillParameter
 {
-    public class GithubDetail : IGithubDetail
+    public class GithubDetail : Entity, IGithubDetail
     {
         public int Followers { get; set; }
         public int PublicRepoCount { get; set; }

@@ -1,5 +1,4 @@
-﻿using SkillService.SkillParameter;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace SkillService.SkillCriteria
 {
-    public interface ISkills
+    public interface IExtraSkill
     {
-        Dictionary<string, int> FormulateScore(IEntity entity);
+        string Name { get; set; }
+        string DisplayName { get; set; }
     }
 }

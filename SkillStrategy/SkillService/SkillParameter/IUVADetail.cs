@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SkillService.SkillParameter
 {
-    public interface IUVADetail
+    public interface IUVADetail : IEntity
     {
         string OnlineJudgeID { get; set; }
         int OfflineSolveCount { get; set; }

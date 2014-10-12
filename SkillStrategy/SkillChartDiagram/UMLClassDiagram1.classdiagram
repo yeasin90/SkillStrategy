@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="c691c762-02bf-4e07-b047-0baa47e33090" name="UMLClassDiagram1" linkedPackageId="feede2e5-b543-44cb-ab4d-2415153ce5c1" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="79b623ea-3c4a-477a-a178-85cc7a933dc4">
+      <profileInstance Id="5473b57d-57f2-404b-b9fd-41ae9ff60f01" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="52246173-8a63-4763-922b-fdd6c03b589e">
+      <profileInstance Id="55b83b29-862b-4fa8-9b1f-9affc766c208" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="3744eac3-ce6f-4441-b44d-e895c116380a" name="SkillStrategy.SkillService.SkillCriteria">
+        <elementDefinition Id="1f4a1ff4-8a9c-4342-8fe1-8bdd0c6f02a7" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <Interface Id="ff34af8c-d101-4dd4-b088-6bcfb31d7d64" name="ISkills" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="0a5bcde6-04ef-417b-aa5d-e836780a30c3" />
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f05981eb-60c9-4eaf-8010-3f66ec6ade78" name="ProgrammingLanguageStrengthSkill" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="93feffa1-cf8d-47a0-b21d-47c36af16865" />
+              <suppliersInternal>
+                <interfaceRealization Id="6ce7371c-b7c4-4678-afb8-5dc65ad1bef9">
+                  <interfaceMoniker Id="ff34af8c-d101-4dd4-b088-6bcfb31d7d64" LastKnownName="ISkills" />
+                  <elementDefinition Id="b2b22aeb-2fa0-4a9f-9262-4cfc58fff0a6" />
+                </interfaceRealization>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="cc81bad1-35e5-4d74-847b-70e3b1d5ef3f" name="ExtraSkillStrengthSkill" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="adcaa8e6-6a21-4e5e-a59d-d2c9292b1936" />
+              <suppliersInternal>
+                <interfaceRealization Id="a7186c89-bfea-46e2-aaa3-0f77e378018a">
+                  <interfaceMoniker Id="ff34af8c-d101-4dd4-b088-6bcfb31d7d64" LastKnownName="ISkills" />
+                  <elementDefinition Id="bddc316c-e91a-45fb-9f31-dacf21479a08" />
+                </interfaceRealization>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="5545bd93-0e19-44f2-b088-382a92c09586" name="PlatformStrengthSkill" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a1f35b9a-9358-4a85-bdad-2bef0acfb1fd" />
+              <suppliersInternal>
+                <interfaceRealization Id="9537917c-f9bf-43ee-8fb6-6f3f7886b061">
+                  <interfaceMoniker Id="ff34af8c-d101-4dd4-b088-6bcfb31d7d64" LastKnownName="ISkills" />
+                  <elementDefinition Id="8354c4b5-dd94-4210-bc3a-c120da1594a2" />
+                </interfaceRealization>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="e87aaa98-db3f-4367-82f0-e9cac8a0ccd6" name="SpecialSkillStrengthSkill" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="af70b879-d956-4fee-819b-a83f5bdd215d" />
+              <suppliersInternal>
+                <interfaceRealization Id="dfae5323-8a01-4fcc-9efd-a9b842b86f26">
+                  <interfaceMoniker Id="ff34af8c-d101-4dd4-b088-6bcfb31d7d64" LastKnownName="ISkills" />
+                  <elementDefinition Id="8f3a35ab-1456-4393-aae9-b5d4bac66bfa" />
+                </interfaceRealization>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="76c00eb5-d027-4b21-adbc-7494ee9494f4" name="TechnologyStrengthSkill" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="405e81db-277f-4bb4-b033-4db427beddc2" />
+              <suppliersInternal>
+                <interfaceRealization Id="fe8dec92-a72f-4e18-98c0-1f1c54325579">
+                  <interfaceMoniker Id="ff34af8c-d101-4dd4-b088-6bcfb31d7d64" LastKnownName="ISkills" />
+                  <elementDefinition Id="8079d932-0685-4283-8243-b2eeaf869154" />
+                </interfaceRealization>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="dfb8bcf1-effe-433d-a5f0-b3490e352eec" name="ToolStrengthSkill" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a2e56989-19be-49d5-91cb-cd350e82a4bb" />
+              <suppliersInternal>
+                <interfaceRealization Id="0211ada2-3c3a-48bb-89bf-9e3a2d750267">
+                  <interfaceMoniker Id="ff34af8c-d101-4dd4-b088-6bcfb31d7d64" LastKnownName="ISkills" />
+                  <elementDefinition Id="a1bcfd6f-80d2-413d-b2bb-da5f2cae7d97" />
+                </interfaceRealization>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f330ed32-8390-4651-8c71-0978ae9b02e1" name="TrackInfluenceSkill" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="985875db-f6e2-40ab-adef-7d1063babfd1" />
+              <suppliersInternal>
+                <interfaceRealization Id="4c888659-7d4b-4e93-beea-b788d1c1c75b">
+                  <interfaceMoniker Id="ff34af8c-d101-4dd4-b088-6bcfb31d7d64" LastKnownName="ISkills" />
+                  <elementDefinition Id="632324ff-cd26-42c1-be27-2f4f8393a8ff" />
+                </interfaceRealization>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="d8f1b3de-3afe-4859-b6b8-a537613f8653" name="IScore" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="6d80f9c1-4a76-4ed0-8b82-ca80117fb21d" />
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="5193bc6a-e1a4-4770-b74a-e2984794a249" name="Score" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="c5343fe6-917a-4b7d-9ac2-792d6db91a0c" />
+              <suppliersInternal>
+                <interfaceRealization Id="9d6d7fbd-502b-4c52-b034-82328e99cc7f">
+                  <interfaceMoniker Id="d8f1b3de-3afe-4859-b6b8-a537613f8653" LastKnownName="IScore" />
+                  <elementDefinition Id="c7cd0968-6e44-4581-935d-9415d8bc75d1" />
+                </interfaceRealization>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="a34975be-f119-4054-a389-79fb0f17740f" name="ISkillStrategyContext" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="28f5c5bc-aae5-4e4e-9321-ad55db5bb9a1" />
+              <suppliersInternal>
+                <dependency Id="64f15b9d-72ec-4e0c-a67e-17d796441cab">
+                  <interfaceMoniker Id="d8f1b3de-3afe-4859-b6b8-a537613f8653" LastKnownName="IScore" />
+                  <elementDefinition Id="fa4129bc-4ed4-49b1-8bc9-7c6bda582a35" />
+                </dependency>
+              </suppliersInternal>
+              <targetEnds>
+                <association Id="8bfb9ef4-a007-48aa-8df5-f0aae76a6bdc" isDerived="false" sourceEndRoleName="ISkillStrategyContext" targetEndRoleName="ISkills" isLeaf="false" isAbstract="false">
+                  <interfaceMoniker Id="ff34af8c-d101-4dd4-b088-6bcfb31d7d64" LastKnownName="ISkills" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="6585b476-8f8b-4677-85be-59c84c7d4ecc" name="ISkillStrategyContext" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="0bf06443-5f89-427f-926f-80e0320c3dbe" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="16a5e896-15d4-46f1-875c-795dba19eab4" name="ISkills" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <elementDefinition Id="3b72e6eb-74f5-4126-a652-3278f9b5932e" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="32e66172-a90e-4cb3-b029-9daa6155a62a" />
+                </association>
+              </targetEnds>
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="42110455-8015-495a-8c4b-672fd9f775da" name="SkillStrategyContext" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5492cce2-5694-48cf-95e3-e39a6b2623a4" />
+              <suppliersInternal>
+                <interfaceRealization Id="f8916e88-86ee-4ee1-91d1-ecbf9ba023aa">
+                  <interfaceMoniker Id="a34975be-f119-4054-a389-79fb0f17740f" LastKnownName="ISkillStrategyContext" />
+                  <elementDefinition Id="2fff0e80-3611-4d13-8507-a8dd7674f999" />
+                </interfaceRealization>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="cf684b07-4de9-4237-8cfc-ecb30286ba35" name="SkillStrategy.SkillService.Repository">
+        <elementDefinition Id="8992fbf6-28a8-4deb-aec2-09fd18bf4f48" />
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="feede2e5-b543-44cb-ab4d-2415153ce5c1" name="SkillChartDiagram">
+    <elementDefinition Id="38bbde06-0c52-450a-bbaf-1be1005631c7" />
+  </package>
+</logicalClassDesignerModel>

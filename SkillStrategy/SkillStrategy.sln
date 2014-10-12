@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillStrategy", "SkillStrat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillService", "SkillService\SkillService.csproj", "{794F0EF0-CDDF-46EF-A1B8-71D4241AB947}"
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "SkillChartDiagram", "SkillChartDiagram\SkillChartDiagram.modelproj", "{A80E3DE7-CF1D-440C-AA8D-AB29A958AB80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{794F0EF0-CDDF-46EF-A1B8-71D4241AB947}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{794F0EF0-CDDF-46EF-A1B8-71D4241AB947}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{794F0EF0-CDDF-46EF-A1B8-71D4241AB947}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A80E3DE7-CF1D-440C-AA8D-AB29A958AB80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A80E3DE7-CF1D-440C-AA8D-AB29A958AB80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A80E3DE7-CF1D-440C-AA8D-AB29A958AB80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A80E3DE7-CF1D-440C-AA8D-AB29A958AB80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

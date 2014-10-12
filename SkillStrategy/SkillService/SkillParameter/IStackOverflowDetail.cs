@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SkillService.SkillParameter
 {
-    public interface IStackOverflowDetail
+    public interface IStackOverflowDetail : IEntity
     {
         string StackOverflowID { get; set; }
         int ViewCount { get; set; }

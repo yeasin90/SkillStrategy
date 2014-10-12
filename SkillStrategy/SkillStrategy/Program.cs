@@ -17,9 +17,9 @@ namespace SkillStrategy
 
             //http://blog.prabir.me/posts/dependency-injection-hello-world-with-ninject
 
-            IKernel kernel = new StandardKernel(new SkillModule());
-            ISkills skill = kernel.Get<ISkills>("ProgrammingLanguageStrengthSkill");
-            skill.Evaluate();
+            //IKernel kernel = new StandardKernel(new SkillModule());
+            //ISkills skill = kernel.Get<ISkills>("ProgrammingLanguageStrengthSkill");
+            //skill.Evaluate();
         }
     }
 }
