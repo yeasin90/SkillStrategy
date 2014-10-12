@@ -1,22 +1,21 @@
 ﻿using Ninject;
 using SkillService.Repository;
-using SkillService.SkillParameter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SkillService.SkillCriteria
+namespace SkillService.SkillEvaluation
 {
-    public class ExtraSkillStrengthSkill : ISkills//Skills
+    public class ToolStrengthSkill : ISkills//Skills
     {
-        private IExtraSkillRepository _extraSkillRepository;
+        private IToolRepository _toolRepository;
 
         [Inject]
-        public ExtraSkillStrengthSkill(IExtraSkillRepository extraSkillRepository)
+        public ToolStrengthSkill(IToolRepository toolRepository)
         {
-            _extraSkillRepository = extraSkillRepository;
+            _toolRepository = toolRepository;
         }
 
         public Dictionary<string, int> FormulateScore(IEntity entity)

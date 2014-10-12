@@ -1,7 +1,8 @@
 ﻿using Ninject.Modules;
+using SkillService.Entities;
 using SkillService.Repository;
 using SkillService.SkillCriteria;
-using SkillService.SkillParameter;
+using SkillService.SkillEvaluation;
 using SkillService.SkillReference;
 using System;
 using System.Collections.Generic;

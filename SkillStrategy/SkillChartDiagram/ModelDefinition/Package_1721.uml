@@ -2,141 +2,8 @@
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="1f4a1ff4-8a9c-4342-8fe1-8bdd0c6f02a7"
-  name="SkillStrategy.SkillService.SkillCriteria" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  name="SkillStrategy.SkillService.Entites" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <packagedElements>
-    <packageHasNamedElement>
-      <Interface
-        Id="0a5bcde6-04ef-417b-aa5d-e836780a30c3"
-        name="ISkills"
-        isAbstract="false"
-        isLeaf="false" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="93feffa1-cf8d-47a0-b21d-47c36af16865"
-        name="ProgrammingLanguageStrengthSkill"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="b2b22aeb-2fa0-4a9f-9262-4cfc58fff0a6">
-            <interfaceMoniker
-              Id="0a5bcde6-04ef-417b-aa5d-e836780a30c3"
-              LastKnownName="ISkills"
-              LastKnownLocation="Package_1721.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="adcaa8e6-6a21-4e5e-a59d-d2c9292b1936"
-        name="ExtraSkillStrengthSkill"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="bddc316c-e91a-45fb-9f31-dacf21479a08">
-            <interfaceMoniker
-              Id="0a5bcde6-04ef-417b-aa5d-e836780a30c3"
-              LastKnownName="ISkills"
-              LastKnownLocation="Package_1721.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="a1f35b9a-9358-4a85-bdad-2bef0acfb1fd"
-        name="PlatformStrengthSkill"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="8354c4b5-dd94-4210-bc3a-c120da1594a2">
-            <interfaceMoniker
-              Id="0a5bcde6-04ef-417b-aa5d-e836780a30c3"
-              LastKnownName="ISkills"
-              LastKnownLocation="Package_1721.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="af70b879-d956-4fee-819b-a83f5bdd215d"
-        name="SpecialSkillStrengthSkill"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="8f3a35ab-1456-4393-aae9-b5d4bac66bfa">
-            <interfaceMoniker
-              Id="0a5bcde6-04ef-417b-aa5d-e836780a30c3"
-              LastKnownName="ISkills"
-              LastKnownLocation="Package_1721.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="405e81db-277f-4bb4-b033-4db427beddc2"
-        name="TechnologyStrengthSkill"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="8079d932-0685-4283-8243-b2eeaf869154">
-            <interfaceMoniker
-              Id="0a5bcde6-04ef-417b-aa5d-e836780a30c3"
-              LastKnownName="ISkills"
-              LastKnownLocation="Package_1721.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="a2e56989-19be-49d5-91cb-cd350e82a4bb"
-        name="ToolStrengthSkill"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="a1bcfd6f-80d2-413d-b2bb-da5f2cae7d97">
-            <interfaceMoniker
-              Id="0a5bcde6-04ef-417b-aa5d-e836780a30c3"
-              LastKnownName="ISkills"
-              LastKnownLocation="Package_1721.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="985875db-f6e2-40ab-adef-7d1063babfd1"
-        name="TrackInfluenceSkill"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="632324ff-cd26-42c1-be27-2f4f8393a8ff">
-            <interfaceMoniker
-              Id="0a5bcde6-04ef-417b-aa5d-e836780a30c3"
-              LastKnownName="ISkills"
-              LastKnownLocation="Package_1721.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
-      </class>
-    </packageHasNamedElement>
     <packageHasNamedElement>
       <Interface
         Id="6d80f9c1-4a76-4ed0-8b82-ca80117fb21d"
@@ -177,47 +44,6 @@
               LastKnownLocation="Package_1721.uml" />
           </dependency>
         </suppliersInternal>
-        <targetEnds>
-          <association
-            Id="32e66172-a90e-4cb3-b029-9daa6155a62a"
-            isDerived="false"
-            sourceEndRoleName="ISkillStrategyContext"
-            targetEndRoleName="ISkills"
-            isLeaf="false"
-            isAbstract="false">
-            <interfaceMoniker
-              Id="0a5bcde6-04ef-417b-aa5d-e836780a30c3"
-              LastKnownName="ISkills"
-              LastKnownLocation="Package_1721.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="0bf06443-5f89-427f-926f-80e0320c3dbe"
-                  name="ISkillStrategyContext"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Composite"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="3b72e6eb-74f5-4126-a652-3278f9b5932e"
-                  name="ISkills"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="true" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
       </Interface>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -233,6 +59,601 @@
             <interfaceMoniker
               Id="28f5c5bc-aae5-4e4e-9321-ad55db5bb9a1"
               LastKnownName="ISkillStrategyContext"
+              LastKnownLocation="Package_1721.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="372652fc-f133-4cca-b29e-2bcc81fc158f"
+        name="IScore"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="64dd60ae-9c0d-497b-a7d3-5be2d11e9c59"
+            isDerived="false"
+            sourceEndRoleName="IScore"
+            targetEndRoleName="IGithubDetail"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="9d5bdbbf-a6a3-45c8-9c10-c2aed4fa1279"
+              LastKnownName="IGithubDetail"
+              LastKnownLocation="Package_1721.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="99e8759c-56b6-4457-a026-0a5bf9704699"
+                  name="IScore"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8612aad4-8802-4f9c-86b5-506b3646079b"
+                  name="IGithubDetail"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6e243263-d0eb-4a8f-8f7d-0fff976f522f"
+            isDerived="false"
+            sourceEndRoleName="IScore"
+            targetEndRoleName="IUvaDetail"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="82f7ecb5-f99f-4f18-b46d-a556cbf258fe"
+              LastKnownName="IUvaDetail"
+              LastKnownLocation="Package_1721.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3279828c-1a6d-4552-902e-c74919a62201"
+                  name="IScore"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="729fb004-5e5d-45da-b7f7-f76a96c9769d"
+                  name="IUvaDetail"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="cb992860-ec1b-4173-b44a-4445d5177305"
+            isDerived="false"
+            sourceEndRoleName="IScore"
+            targetEndRoleName="IStackOverflowDetail"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="359deb2a-f85f-4e42-ba15-f27c18b6f714"
+              LastKnownName="IStackOverflowDetail"
+              LastKnownLocation="Package_1721.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dfc1276e-7dea-4330-9d95-8f7be772d9ef"
+                  name="IScore"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c37bdd72-7180-40be-9de9-eae3262ebde6"
+                  name="IStackOverflowDetail"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property
+            Id="5a453bf8-8071-4304-a94c-adb17813eb64"
+            name="TrackInfluence"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a2f154a3-240c-4d90-91f6-e878c5d66276"
+                LastKnownName="Dictionary&lt;string, int&gt;"
+                LastKnownLocation="Package_1727.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ce50fb2b-51f0-4e02-b143-485410304acf"
+            name="ProgrammingLanguageStrength"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a2f154a3-240c-4d90-91f6-e878c5d66276"
+                LastKnownName="Dictionary&lt;string, int&gt;"
+                LastKnownLocation="Package_1727.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d8ce109d-bfef-4e23-8efe-0c7990ca530f"
+            name="PlatformStrength"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a2f154a3-240c-4d90-91f6-e878c5d66276"
+                LastKnownName="Dictionary&lt;string, int&gt;"
+                LastKnownLocation="Package_1727.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="bed649a6-0e51-4295-88b5-9034a584bbbe"
+            name="ToolStrength"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a2f154a3-240c-4d90-91f6-e878c5d66276"
+                LastKnownName="Dictionary&lt;string, int&gt;"
+                LastKnownLocation="Package_1727.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e4e0cc36-a093-41e4-a088-d273a164df4f"
+            name="TechnologyStrength"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a2f154a3-240c-4d90-91f6-e878c5d66276"
+                LastKnownName="Dictionary&lt;string, int&gt;"
+                LastKnownLocation="Package_1727.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="472370c3-df70-4938-a35e-446922ca14c9"
+            name="SpecialSkillStrength"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a2f154a3-240c-4d90-91f6-e878c5d66276"
+                LastKnownName="Dictionary&lt;string, int&gt;"
+                LastKnownLocation="Package_1727.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ece040c5-0779-4654-a865-a2042e938320"
+            name="ExtraSkillStrength"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a2f154a3-240c-4d90-91f6-e878c5d66276"
+                LastKnownName="Dictionary&lt;string, int&gt;"
+                LastKnownLocation="Package_1727.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ca83beca-8b4d-4842-8871-7ae15e1670f6"
+            name="Activity"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a2f154a3-240c-4d90-91f6-e878c5d66276"
+                LastKnownName="Dictionary&lt;string, int&gt;"
+                LastKnownLocation="Package_1727.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="33d7f334-703c-42e9-91b1-2f212bf8efd1"
+            name="Github"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dd05b820-d273-471a-b127-ad05b11e1b50"
+                LastKnownName="IGithubDetail"
+                LastKnownLocation="Package_1727.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="34a0988a-694e-46c4-84d9-a13c2144a59e"
+            name="UVA"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="05b592d7-c43f-4d64-9a24-79d8ac90d957"
+                LastKnownName="IUVADetail"
+                LastKnownLocation="Package_1727.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="62c78565-2d2f-4d93-aab1-33c5f868e8bc"
+            name="StackOverflow"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ca649b91-7eaa-4ca3-878d-f865bcda4b8f"
+                LastKnownName="IStackOverflowDetail"
+                LastKnownLocation="Package_1727.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0611d188-3c71-4591-a137-fc7ca0bdd7cf"
+        name="Score"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="5439b79e-75fc-4d95-be1c-587934392a20">
+            <interfaceMoniker
+              Id="372652fc-f133-4cca-b29e-2bcc81fc158f"
+              LastKnownName="IScore"
+              LastKnownLocation="Package_1721.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="9d5bdbbf-a6a3-45c8-9c10-c2aed4fa1279"
+        name="IGithubDetail"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="82f7ecb5-f99f-4f18-b46d-a556cbf258fe"
+        name="IUvaDetail"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="359deb2a-f85f-4e42-ba15-f27c18b6f714"
+        name="IStackOverflowDetail"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fd273ca7-0f49-4f49-b6f7-011687bd4811"
+        name="GithubDetail"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="6d8c063d-6383-4789-81fa-8d2622fc885e">
+            <interfaceMoniker
+              Id="9d5bdbbf-a6a3-45c8-9c10-c2aed4fa1279"
+              LastKnownName="IGithubDetail"
+              LastKnownLocation="Package_1721.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0c6d1f1a-82ec-4b30-a8d0-12e6715bd220"
+        name="UvaDetail"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="4a08f3ec-2771-4d25-93b7-47554e9edab6">
+            <interfaceMoniker
+              Id="82f7ecb5-f99f-4f18-b46d-a556cbf258fe"
+              LastKnownName="IUvaDetail"
+              LastKnownLocation="Package_1721.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2c74664f-9067-4f05-a2d0-b9a2b130221f"
+        name="StackOverflowDetail"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="e49659ba-ddd8-4c33-be3d-fefebccd824c">
+            <interfaceMoniker
+              Id="359deb2a-f85f-4e42-ba15-f27c18b6f714"
+              LastKnownName="IStackOverflowDetail"
+              LastKnownLocation="Package_1721.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="c12552ee-8a74-4a31-8ec3-ebebd09e1274"
+        name="IExtraSkill"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="2b40064d-30d7-4595-b5f3-3c31d69c60a1"
+        name="IPlatform"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a88549c4-a60f-4097-87fa-ea8ca53d97dc"
+        name="IProgrammingLanguage"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="85390a59-6ac8-4066-8e3a-b62410cd22e8"
+        name="ISpecialSkill"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="d89222e3-19c6-42c3-84bc-2ffe72f78209"
+        name="ITechnology"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="536eb171-3649-40fb-8de7-bb4a55817fa6"
+        name="ITool"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="de39e7f9-19c8-472c-bffb-919a1333e079"
+        name="ITrack"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9ae207a8-b82b-4323-af0d-9b0cf071536e"
+        name="ExtraSkill"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="950dac16-13ab-4416-91a4-27c8064328be">
+            <interfaceMoniker
+              Id="c12552ee-8a74-4a31-8ec3-ebebd09e1274"
+              LastKnownName="IExtraSkill"
+              LastKnownLocation="Package_1721.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7e794e47-c686-4c78-86c3-49b6436c36e6"
+        name="Platform"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="8df9f7fe-935e-4d49-a9e3-e74a643e4d41">
+            <interfaceMoniker
+              Id="2b40064d-30d7-4595-b5f3-3c31d69c60a1"
+              LastKnownName="IPlatform"
+              LastKnownLocation="Package_1721.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0b0368fb-1046-4ef1-9eba-cf0f97ba502f"
+        name="ProgrammingLanguage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="50d9d6fb-929a-4f89-83c0-bdde1a567941">
+            <interfaceMoniker
+              Id="a88549c4-a60f-4097-87fa-ea8ca53d97dc"
+              LastKnownName="IProgrammingLanguage"
+              LastKnownLocation="Package_1721.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ca006079-4b7a-46b2-8d16-347cddd2e920"
+        name="Track"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="b9c4a5b3-0b4c-42d1-8b9d-89c4afca8519">
+            <interfaceMoniker
+              Id="de39e7f9-19c8-472c-bffb-919a1333e079"
+              LastKnownName="ITrack"
+              LastKnownLocation="Package_1721.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="33665bba-f0e2-4f8d-a40a-dc26f90e8022"
+        name="SpecialSkill"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="a0582b95-ca9a-4095-a5d7-303578b1e5a6">
+            <interfaceMoniker
+              Id="85390a59-6ac8-4066-8e3a-b62410cd22e8"
+              LastKnownName="ISpecialSkill"
+              LastKnownLocation="Package_1721.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a835ed67-f362-4746-83cd-fe3383105ce0"
+        name="Technology"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="6810fd0a-bc87-4899-854c-93f116969161">
+            <interfaceMoniker
+              Id="d89222e3-19c6-42c3-84bc-2ffe72f78209"
+              LastKnownName="ITechnology"
+              LastKnownLocation="Package_1721.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7fdd556a-87b5-4638-86b4-d06ac184a3c3"
+        name="Tool"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="d9063cb4-3aa5-4d3c-ac20-7498d700162d">
+            <interfaceMoniker
+              Id="536eb171-3649-40fb-8de7-bb4a55817fa6"
+              LastKnownName="ITool"
               LastKnownLocation="Package_1721.uml" />
           </interfaceRealization>
         </suppliersInternal>

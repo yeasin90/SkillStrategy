@@ -1,11 +1,10 @@
-﻿using SkillService.SkillParameter;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SkillService.SkillCriteria
+namespace SkillService.SkillEvaluation
 {
     public interface ISkills
     {

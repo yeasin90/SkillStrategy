@@ -21,14 +21,20 @@
     <packageHasNamedElement>
       <packageMoniker
         Id="1f4a1ff4-8a9c-4342-8fe1-8bdd0c6f02a7"
-        LastKnownName="SkillStrategy.SkillService.SkillCriteria"
+        LastKnownName="SkillStrategy.SkillService.Entites"
         LastKnownLocation="Package_1721.uml" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <packageMoniker
         Id="8992fbf6-28a8-4deb-aec2-09fd18bf4f48"
-        LastKnownName="SkillStrategy.SkillService.Repository"
+        LastKnownName="SkillStrategy.SkillService.SkillEvaluation"
         LastKnownLocation="Package_1727.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="27589942-7150-4852-a43f-c8277b9a888f"
+        LastKnownName="SkillStrategy.SkillService.Repository"
+        LastKnownLocation="Package_0139.uml" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

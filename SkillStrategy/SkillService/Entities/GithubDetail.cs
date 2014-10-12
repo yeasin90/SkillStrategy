@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SkillService.SkillParameter
+namespace SkillService.Entities
 {
     public class GithubDetail : Entity, IGithubDetail
     {

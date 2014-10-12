@@ -1,13 +1,14 @@
 ﻿using Ninject;
+using SkillService.Entities;
 using SkillService.Repository;
-using SkillService.SkillParameter;
+using SkillService.SkillCriteria;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SkillService.SkillCriteria
+namespace SkillService.SkillEvaluation
 {
     public class ProgrammingLanguageStrengthSkill : ISkills//Skills
     {
@@ -21,7 +22,7 @@ namespace SkillService.SkillCriteria
 
         public Dictionary<string, int> FormulateScore(IEntity entity)
         {
-            if (entity is GithubDetail)
+            if (entity is IGithubDetail)
                 return GithubFormula((IGithubDetail)entity);
 
             throw new NotImplementedException();

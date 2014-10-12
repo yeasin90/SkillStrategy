@@ -1,12 +1,12 @@
 ﻿using Ninject;
-using SkillService.SkillParameter;
+using SkillService.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SkillService.SkillCriteria
+namespace SkillService.SkillEvaluation
 {
     public class SkillEvaluationContext : ISkillEvaluationContext
     {
