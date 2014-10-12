@@ -1,0 +1,4 @@
+SkillStrategy
+=============
+
+Skill calculator
