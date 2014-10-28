@@ -1,4 +1,5 @@
-﻿using Ninject.Modules;
+﻿using Activity.Badge;
+using Ninject.Modules;
 using SkillService.Entities;
 using SkillService.Repository;
 using SkillService.SkillCriteria;
@@ -46,6 +47,14 @@ namespace SkillService
             Bind<IStackOverflowDetail>().To<StackOverflowDetail>();
             Bind<IUVADetail>().To<UVADetail>();
             Bind<IScore>().To<Score>();
+
+            Bind<IBadge>().To<Badge>();
+            Bind<IBadgeEngine>().To<TestBadge>().Named("TestBadge");
+            Bind<IBadgeEngine>().To<ContestBadge>().Named("ContestBadge");
+            Bind<IBadgeEngine>().To<RankBadge>().Named("RankBadge");
+            Bind<IBadgeEngine>().To<DevSkillActivityBadge>().Named("DevSkillActivityBadge");
+            Bind<IBadgeEngine>().To<ContributionBadge>().Named("ContributionBadge");
+            Bind<IBadgeClient>().To<BadgeClient>();
         }
     }
 }
