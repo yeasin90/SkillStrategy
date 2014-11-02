@@ -9,6 +9,30 @@ using System.Threading.Tasks;
 
 namespace SkillStrategy
 {
+    public interface A
+    {
+        void X();
+    }
+
+    public interface B
+    {
+        void Y();
+    }
+
+    public class AB : A, B
+    {
+        public void Y()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void X()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+
     class Program
     {
         static void Main(string[] args)
@@ -20,6 +44,8 @@ namespace SkillStrategy
             //IKernel kernel = new StandardKernel(new SkillModule());
             //ISkills skill = kernel.Get<ISkills>("ProgrammingLanguageStrengthSkill");
             //skill.Evaluate();
+            B b = new AB();
+            b.Y();
         }
     }
 }
