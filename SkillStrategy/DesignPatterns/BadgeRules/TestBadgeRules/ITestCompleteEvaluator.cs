@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.BadgeRules.TestBadgeRules
 {
-    public interface ITestBadgeRules
+    internal interface ITestCompleteEvaluator
     {
-        IBadge TestPassedBadge(IContestant contestant);
+        IBadge EvaluateBadgeForTestCompletion(IContestant contestant);
     }
+
+    //public class
 }

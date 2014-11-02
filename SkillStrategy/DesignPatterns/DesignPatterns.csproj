@@ -40,9 +40,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Badge.cs" />
-    <Compile Include="BadgeRules\TestBadgeRules\ITestBadgeRules.cs" />
-    <Compile Include="BadgeRules\TestBadgeRules\TestBadgeRules.cs" />
-    <Compile Include="BadgeRules\TestBadgeRules\TestPassedHandler.cs" />
+    <Compile Include="BadgeRules\TestBadgeRules\IBadgeService.cs" />
+    <Compile Include="BadgeRules\TestBadgeRules\ITestBadges.cs" />
+    <Compile Include="BadgeRules\TestBadgeRules\ITestCompleteEvaluator.cs" />
+    <Compile Include="BadgeRules\TestBadgeRules\TestBadges.cs" />
+    <Compile Include="BadgeRules\TestBadgeRules\TestCompleteHandler.cs" />
+    <Compile Include="BadgeRules\TestBadgeRules\TestCompleteEvaluator.cs" />
     <Compile Include="Contestant.cs" />
     <Compile Include="IBadge.cs" />
     <Compile Include="IContestant.cs" />
