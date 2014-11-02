@@ -8,11 +8,11 @@ namespace DesignPatterns.BadgeRules.TestBadgeRules
 {
     public class TestBadges: ITestBadges
     {
-        private ITestCompleteEvaluator _testCompleteEvaluator = new TestCompleteEvaluator();
+        private ICompleteEvaluator _testCompleteEvaluator = new TestCompleteEvaluator();
 
         public IBadge GetBadgeForTestCompletion(IContestant contestant)
         {
-            return _testCompleteEvaluator.EvaluateBadgeForTestCompletion(contestant);
+            return _testCompleteEvaluator.EvaluateCompletion(contestant);
         }
     }
 }

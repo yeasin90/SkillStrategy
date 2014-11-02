@@ -42,7 +42,7 @@
     <Compile Include="Badge.cs" />
     <Compile Include="BadgeRules\TestBadgeRules\IBadgeService.cs" />
     <Compile Include="BadgeRules\TestBadgeRules\ITestBadges.cs" />
-    <Compile Include="BadgeRules\TestBadgeRules\ITestCompleteEvaluator.cs" />
+    <Compile Include="BadgeRules\TestBadgeRules\ICompleteEvaluator.cs" />
     <Compile Include="BadgeRules\TestBadgeRules\TestBadges.cs" />
     <Compile Include="BadgeRules\TestBadgeRules\TestCompleteHandler.cs" />
     <Compile Include="BadgeRules\TestBadgeRules\TestCompleteEvaluator.cs" />

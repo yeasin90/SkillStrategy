@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.BadgeRules.TestBadgeRules
 {
-    internal class TestCompleteEvaluator : ITestCompleteEvaluator
+    internal class TestCompleteEvaluator : ICompleteEvaluator
     {
         private TestCompleteHandler _passedThreeTest;
         private TestCompleteHandler _passedSevenTest;
@@ -22,7 +22,7 @@ namespace DesignPatterns.BadgeRules.TestBadgeRules
             _passedSevenTest.SetSuccessor(_passedThreeTest);
         }
 
-        public IBadge EvaluateBadgeForTestCompletion(IContestant contestant)
+        public IBadge EvaluateCompletion(IContestant contestant)
         {
             return _passedFifteenTest.GetBadge(string.Empty);
         }

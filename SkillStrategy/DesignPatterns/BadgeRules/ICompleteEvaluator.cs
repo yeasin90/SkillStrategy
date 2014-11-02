@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.BadgeRules.TestBadgeRules
 {
-    internal interface ITestCompleteEvaluator
+    internal interface ICompleteEvaluator
     {
-        IBadge EvaluateBadgeForTestCompletion(IContestant contestant);
+        IBadge EvaluateCompletion(IContestant contestant);
     }
 
     //public class
