@@ -32,6 +32,57 @@ namespace SkillStrategy
         }
     }
 
+    public class MyClass
+    {
+        private void Test(string param)
+        {
+            if (string.IsNullOrWhiteSpace(param))
+                throw new ArgumentNullException("Null Ex");
+            else if (param.Length > 1)
+                throw new ArgumentException("Arg Excp");
+            else if (param.Length > 5)
+                throw new OverflowException();
+            else if (param.Length < 1)
+                throw new FormatException();
+        }
+
+        public void Call(string input)
+        {
+            try
+            {
+                Test(input);
+            }
+            catch (Exception ex)
+            {
+                HandleException(ex);
+            }
+        }
+
+        private void HandleException(Exception ex)
+        {
+            ArgumentException argEx;
+            OverflowException ovfEx;
+            FormatException fmtEx;
+            ArgumentNullException argNullExp;
+
+            if ((argNullExp = ex as ArgumentNullException) != null)
+            {
+                //ToDo..
+            }
+            else if ((argEx = ex as ArgumentException) != null)
+            {
+                //ToDo..
+            }
+            else if ((ovfEx = ex as OverflowException) != null)
+            {
+                //ToDo..
+            }
+            else if ((fmtEx = ex as FormatException) != null)
+            {
+                //ToDo..
+            }
+        }
+    }
 
     class Program
     {
@@ -44,8 +95,13 @@ namespace SkillStrategy
             //IKernel kernel = new StandardKernel(new SkillModule());
             //ISkills skill = kernel.Get<ISkills>("ProgrammingLanguageStrengthSkill");
             //skill.Evaluate();
-            B b = new AB();
-            b.Y();
+            //B b = new AB();
+            //b.Y();
+
+            MyClass cls = new MyClass();
+            cls.Call("TTT");
+            cls.Call(string.Empty);
+            //cls.Call
         }
     }
 }

@@ -15,4 +15,6 @@ namespace DesignPatterns.BadgeRules.TestBadgeRules
             return _testCompleteEvaluator.EvaluateCompletion(contestant);
         }
     }
+
+    
 }
