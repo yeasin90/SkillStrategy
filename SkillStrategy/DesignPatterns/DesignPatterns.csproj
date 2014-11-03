@@ -40,9 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Badge.cs" />
-    <Compile Include="BadgeRules\TestBadgeRules\IBadgeService.cs" />
+    <Compile Include="IBadgeService.cs" />
     <Compile Include="BadgeRules\TestBadgeRules\ITestBadges.cs" />
-    <Compile Include="BadgeRules\TestBadgeRules\ICompleteEvaluator.cs" />
+    <Compile Include="BadgeRules\ICompleteEvaluator.cs" />
     <Compile Include="BadgeRules\TestBadgeRules\TestBadges.cs" />
     <Compile Include="BadgeRules\TestBadgeRules\TestCompleteHandler.cs" />
     <Compile Include="BadgeRules\TestBadgeRules\TestCompleteEvaluator.cs" />
@@ -55,7 +55,9 @@
     <Compile Include="VisitorPattern\NonVisitor.cs" />
     <Compile Include="VisitorPattern\Visitor.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="BadgeRules\ContestBadgeRules\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
