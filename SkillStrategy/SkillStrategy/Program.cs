@@ -88,6 +88,8 @@ namespace SkillStrategy
     {
         static void Main(string[] args)
         {
+            //http://stefanoricciardi.com/2011/01/21/ninject-mini-tutorial-part-1/
+            //http://stefanoricciardi.com/2011/02/04/ninject-mini-tutorial-part-2/
             //http://dotnetslackers.com/articles/csharp/Get-Started-with-Ninject-2-0-in-C-sharp-Programming.aspx
 
             //http://blog.prabir.me/posts/dependency-injection-hello-world-with-ninject
