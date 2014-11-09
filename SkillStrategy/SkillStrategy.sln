@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Activity", "Activity\Activi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{FFD2FB86-8B25-47BF-9060-D7644DC552E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillStrategy.Test", "SkillStrategy.Test\SkillStrategy.Test.csproj", "{4C4EA99D-053E-47AC-B39C-8C25B12B20A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{FFD2FB86-8B25-47BF-9060-D7644DC552E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFD2FB86-8B25-47BF-9060-D7644DC552E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFD2FB86-8B25-47BF-9060-D7644DC552E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C4EA99D-053E-47AC-B39C-8C25B12B20A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C4EA99D-053E-47AC-B39C-8C25B12B20A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C4EA99D-053E-47AC-B39C-8C25B12B20A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C4EA99D-053E-47AC-B39C-8C25B12B20A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

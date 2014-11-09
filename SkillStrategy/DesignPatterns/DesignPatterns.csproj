@@ -50,6 +50,16 @@
     <Compile Include="IBadge.cs" />
     <Compile Include="IContestant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProxyPattern\Customer.cs" />
+    <Compile Include="ProxyPattern\CustomerEntity.cs" />
+    <Compile Include="ProxyPattern\CustomerRepository.cs" />
+    <Compile Include="ProxyPattern\NonProxy\Order.cs" />
+    <Compile Include="ProxyPattern\OrderDetails.cs" />
+    <Compile Include="ProxyPattern\OrderDetailsRepository.cs" />
+    <Compile Include="ProxyPattern\OrderEntity.cs" />
+    <Compile Include="ProxyPattern\OrderRepository.cs" />
+    <Compile Include="ProxyPattern\Proxy\LazyOrder.cs" />
+    <Compile Include="ProxyPattern\Proxy\OrderProxy.cs" />
     <Compile Include="RulesPattern\NonRules.cs" />
     <Compile Include="RulesPattern\Rules.cs" />
     <Compile Include="VisitorPattern\NonVisitor.cs" />

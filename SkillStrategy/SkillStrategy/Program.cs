@@ -34,6 +34,11 @@ namespace SkillStrategy
 
     public class MyClass
     {
+        public void Data(Type t)
+        {
+
+        }
+
         private void Test(string param)
         {
             if (string.IsNullOrWhiteSpace(param))
@@ -103,6 +108,7 @@ namespace SkillStrategy
             MyClass cls = new MyClass();
             cls.Call("TTT");
             cls.Call(string.Empty);
+            //cls.Data("bla");
             //cls.Call
         }
     }
