@@ -25,7 +25,7 @@ namespace SkillStrategy.Test
         [TestMethod]
         public void LazyProxy()
         {
-            OrderProxy order = new OrderProxy(1);
+            LazyOrder order = new LazyOrder(1);
             Console.WriteLine("Customer name : " + order.Customer.Name + " Order date : " + order.OrderDate);
         }
     }
