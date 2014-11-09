@@ -50,6 +50,7 @@
     <Compile Include="IBadge.cs" />
     <Compile Include="IContestant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtoTypePattern\PrototypePattern.cs" />
     <Compile Include="ProxyPattern\Customer.cs" />
     <Compile Include="ProxyPattern\CustomerEntity.cs" />
     <Compile Include="ProxyPattern\CustomerRepository.cs" />

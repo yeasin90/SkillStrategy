@@ -50,10 +50,15 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="ActivityTests.cs" />
     <Compile Include="DesingPatternTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Activity\Activity.csproj">
+      <Project>{da025c73-89f8-4236-906f-4f4cc62d5a14}</Project>
+      <Name>Activity</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DesignPatterns\DesignPatterns.csproj">
       <Project>{ffd2fb86-8b25-47bf-9060-d7644dc552e0}</Project>
       <Name>DesignPatterns</Name>

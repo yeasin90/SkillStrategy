@@ -49,6 +49,8 @@
     <Compile Include="Badge\IBadgeEngine.cs" />
     <Compile Include="Badge\RankBadge.cs" />
     <Compile Include="Badge\TestBadge.cs" />
+    <Compile Include="PracticeGround\LazyLoading.cs" />
+    <Compile Include="PracticeGround\ShalowDeepCopy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
