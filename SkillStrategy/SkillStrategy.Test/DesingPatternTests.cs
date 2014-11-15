@@ -28,5 +28,35 @@ namespace SkillStrategy.Test
             LazyOrder order = new LazyOrder(1);
             Console.WriteLine("Customer name : " + order.Customer.Name + " Order date : " + order.OrderDate);
         }
+
+        [TestMethod]
+        public void NonObserver()
+        {
+            foreach (DesignPatterns.ObserverPattern.NonObserver.Stock s in DesignPatterns.ObserverPattern.NonObserver.SampleData.getNext())
+            {
+                if(s.Symbol == "GOOG")
+                    Console.WriteLine("Google's new price is : {0}", s.Price);
+                if(s.Symbol == "MSFT" && s.Price > 10.00m)
+                    Console.WriteLine("Microsoft has reached the target price: {0}", s.Price);
+            }
+        }
+
+        [TestMethod]
+        public void TraditionalObserver()
+        {
+            DesignPatterns.ObserverPattern.TraditionalObserver.StockTicker subj = new DesignPatterns.ObserverPattern.TraditionalObserver.StockTicker();
+
+            DesignPatterns.ObserverPattern.TraditionalObserver.GoogleObserver gobs = new DesignPatterns.ObserverPattern.TraditionalObserver.GoogleObserver(subj);
+            DesignPatterns.ObserverPattern.TraditionalObserver.MicrosoftObserver mobs = new DesignPatterns.ObserverPattern.TraditionalObserver.MicrosoftObserver(subj);
+
+            foreach (var s in DesignPatterns.ObserverPattern.TraditionalObserver.SampleData.getNext())
+                subj.Stock = s;
+        }
+
+        [TestMethod]
+        public void IObserver()
+        {
+
+        }
     }
 }

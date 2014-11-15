@@ -49,6 +49,9 @@
     <Compile Include="Contestant.cs" />
     <Compile Include="IBadge.cs" />
     <Compile Include="IContestant.cs" />
+    <Compile Include="ObserverPattern\IObserver.cs" />
+    <Compile Include="ObserverPattern\NonObserver.cs" />
+    <Compile Include="ObserverPattern\TraditionalObserver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProtoTypePattern\PrototypePattern.cs" />
     <Compile Include="ProxyPattern\Customer.cs" />
