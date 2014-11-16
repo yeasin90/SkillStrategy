@@ -54,9 +54,13 @@ namespace SkillStrategy.Test
         }
 
         [TestMethod]
-        public void IObserver()
+        public void MyMediator()
         {
-
+            DesignPatterns.MyMediator.IMediator mediator = new DesignPatterns.MyMediator.Mediator();
+            DesignPatterns.MyMediator.Car bmw = new DesignPatterns.MyMediator.BMW(mediator);
+            DesignPatterns.MyMediator.Car audi = new DesignPatterns.MyMediator.Audi(mediator);
+            DesignPatterns.MyMediator.BMW bm = (DesignPatterns.MyMediator.BMW)bmw;
+            bm.Price = 1000;
         }
     }
 }

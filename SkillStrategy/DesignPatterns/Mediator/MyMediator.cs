@@ -8,9 +8,9 @@ namespace DesignPatterns.MyMediator
 {
     public abstract class Car
     {
-        public abstract string Name { get; set; }
-        public abstract string Color { get; set; }
-        private readonly IMediator _mediator;
+        public abstract string Name { get; }
+        public abstract string Color { get; }
+        protected readonly IMediator _mediator;
 
         public Car(IMediator mediator)
         {
@@ -21,8 +21,15 @@ namespace DesignPatterns.MyMediator
 
     public class BMW : Car
     {
-        public override string Name { get; set; }
-        public override string Color { get; set; }
+        public override string Name { get { return "BMW"; } }
+        public override string Color { get { return "Blue"; } }
+        public int Price
+        {
+            set
+            {
+                _mediator.Notify(this);
+            }
+        }
 
         public BMW(IMediator mediator)
             : base(mediator)
@@ -32,8 +39,8 @@ namespace DesignPatterns.MyMediator
 
     public class Audi : Car
     {
-        public override string Name { get; set; }
-        public override string Color { get; set; }
+        public override string Name { get { return "Audi"; } }
+        public override string Color { get { return "White"; } }
 
         public Audi(IMediator mediator)
             : base(mediator)
@@ -53,13 +60,17 @@ namespace DesignPatterns.MyMediator
 
         public void RegisterColleauges(Car car)
         {
+            Console.WriteLine(car.Name);
             if (!_carsUnderGuidance.Contains(car))
                 _carsUnderGuidance.Add(car);
         }
 
         public void Notify(Car reportingCar)
         {
-            throw new NotImplementedException();
+            if (reportingCar is BMW)
+            {
+                var reportTO = _carsUnderGuidance.Where(x => x is Audi).FirstOrDefault();
+            }
         }
     }
 
