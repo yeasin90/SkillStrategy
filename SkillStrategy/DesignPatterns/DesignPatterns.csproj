@@ -49,6 +49,10 @@
     <Compile Include="Contestant.cs" />
     <Compile Include="IBadge.cs" />
     <Compile Include="IContestant.cs" />
+    <Compile Include="Mediator\Mediator.cs" />
+    <Compile Include="Mediator\MyMediator.cs" />
+    <Compile Include="Mediator\NonMediator.cs" />
+    <Compile Include="NullObjectPattern\NullPattern.cs" />
     <Compile Include="ObserverPattern\IObserver.cs" />
     <Compile Include="ObserverPattern\NonObserver.cs" />
     <Compile Include="ObserverPattern\TraditionalObserver.cs" />
