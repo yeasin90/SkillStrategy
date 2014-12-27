@@ -15,10 +15,12 @@ namespace MoqPractice.Tests
             // Arrange
             var mockRepository = new Mock<ICustomerRepository>();
 
-            // This setup means : we expect this method only to be called and we don't care about the parameters. We just wanna make sure it's get called
+            //Expectations of the Test case
+            // This setup means : we expect this method only to be called and we don't care about the parameters. 
+            // We just wanna make sure it's get called
             mockRepository.Setup(x => x.Save(
-                It.IsAny<Customer>() // Read as, It is for Any Customer. Or for any customer. Because we only want this method to be called for any parameter
-                ));
+                It.IsAny<Customer>() // Read as, It is for Any Customer. Or for any customer. 
+                )); //Because we only want this method to be called for any parameter
 
             var customerService = new CustomerService(mockRepository.Object);
 
@@ -26,9 +28,13 @@ namespace MoqPractice.Tests
             customerService.Create(new CustomerToCreateDto());
 
             // Assert
-            // VerifyAll() = everything we have done in the arrange area as a setup should be checked to see if it occured
+            // VerifyAll() = everything we have done in the arrange area or expectations as a setup should be checked to see if it occured
             // Example : if we comment out the repostiory Save method from SUT, this unit test will throw exception, because VerifyAll will fail
             mockRepository.VerifyAll();
+
+            // ****SUMMARY OF THIS TEST CASE : 
+            // A simple verification that a method is being called inside our SUT.
+            // all the verifications are done in the Assert section with the .VerifyAll() or .Verify() etc
         }
 
         // Simple verification of SUT
@@ -48,27 +54,37 @@ namespace MoqPractice.Tests
             };
 
             var mockRepository = new Mock<ICustomerRepository>();
-            mockRepository.Setup(x => x.Save(It.IsAny<Customer>()));
 
             //This line is called SUT (System under test)
-            var customerService = new CustomerService(mockRepository.Object); // .Object use na korle, <T> pass hoe. .Object use korle <T> = <ICustomerRepository> type e convert hobe
+            var customerService = new CustomerService(mockRepository.Object); 
+            // .Object use na korle, <T> pass hoe. .Object use korle <T> = <ICustomerRepository> type e convert hobe
 
             // Act or Execut the SUT
             customerService.Create(listOfCustomerDtos);
 
             // Assert
-            mockRepository.Verify(); // We expected that repo.Save() should be called. Could be called once or thousand time. We just making sure it's getting called
             mockRepository.Verify(x => x.Save(It.IsAny<Customer>()),
-                Times.Exactly(listOfCustomerDtos.Count)); // repo.Save() has to be called excatly the same number of times the collection count
+                Times.Exactly(listOfCustomerDtos.Count)); 
+            // repo.Save() has to be called excatly the same number of times the collection count
+            // evaabe Verify korle expectation er mockRepository.Setup(x => x.Save(It.IsAny<Customer>())); baad dia dea jae.
+            
+            
+            mockRepository.Verify();
+            // This will verify that _customerRepository.Save() was get called, dosen matter how many times
 
-            // This assert will fail. Will display : Expected invocation on the mock exactly 2 times, but it was 3(list count) times: x => x.Save(It.IsAny<Customer>())
             mockRepository.Verify(x => x.Save(It.IsAny<Customer>()),
-                Times.Exactly(2));
+              Times.Exactly(2));
+            // This assert will fail. 
+            // Will display : Expected invocation on the mock exactly 2 times, but it was 3(list count) times: x => x.Save(It.IsAny<Customer>())
+            
 
             // There are various overloads of Verify()
-            mockRepository.Verify(x => x.Save(It.IsAny<Customer>()), "");
-            mockRepository.Verify(x => x.Save(It.IsAny<Customer>()), Times.AtLeast(2));
+            //mockRepository.Verify(x => x.Save(It.IsAny<Customer>()), "");
+            //mockRepository.Verify(x => x.Save(It.IsAny<Customer>()), Times.AtLeast(2));
             // etc
+
+            // ****SUMMARY OF THIS TEST CASE : 
+            // A verification that a method was invoked for a specific number of time
         }
 
         // Return values of mocked or faked objects
@@ -86,20 +102,16 @@ namespace MoqPractice.Tests
             var mockRepository = new Mock<ICustomerRepository>();
             var mockAdderssBuilder = new Mock<ICustomerAddressBuilder>();
 
-            // mockAdderssBuilder.From(customerToCreateDto) ke Setup er maddhome Return type define kore dea hoe nai.
-            // By default inside Moq, if we don't define what is going to return, it will retunr the default value
-            // Example : 
-            // mockAdderssBuilder.Setup(x => x.From(It.IsAny<CustomerToCreateDto>())).Returns(() => null);
-            // aivabe amra setup kore Return type define kore dite partam.
-            // but jehetu ei setup amra kori nai, so mock object or mockAdderssBuilder er Form() method will return default value.
-            // and default value of Address or Object is null. So _customerAddressBuilder.From(customerToCreateDto) will return NULL.
-            // So retunr type int thakle default is 0 etc etc
+            // kono ekta dependency ke jodi Mock kori abong tar kono function ke jodi setup na kori and shei function jodi SUT te invoke hoe,
+            // shei khetre in the STU, that Mocked object's function will return default value.
+            // so explicityl return NULL er jonno Setup na korleo ei test case pass korbe.
 
-            // Explicitly define korle
+            // But explicitly NULL return er jonno define kore dea uchti. Cu ei test case amra ei jonnoi likhsi.
+            // Abar jehetu expcetion thor kora amader ekta EXPECTATION, so explicitly deifne kore deai valo
+            // which is : 
             mockAdderssBuilder
                 .Setup(x => x.From(It.IsAny<CustomerToCreateDto>()))
-                .Returns(() => null); // Like setup, everything is going to be handled using lambda. (this will not be like .Returns(null) )
-            // () => means a ZERO parameter will pass in and will return a NULL
+                .Returns(() => null);
 
             var customerService = new CustomerService(
                 mockRepository.Object,
@@ -122,6 +134,9 @@ namespace MoqPractice.Tests
             mockAddressBuilder
                 .Setup(x => x.From(It.IsAny<CustomerToCreateDto>()))
                 .Returns(new Address());
+
+            // The below line lekhelo prob nai, na likhleo prob nai. amader mul Expcetation uporer Setup e amra define kore disi
+            // so the following line can be considered as Stub
             //mockRepository.Setup(x => x.Save(It.IsAny<Customer>()));
 
             var customerService = new CustomerService(
@@ -133,10 +148,14 @@ namespace MoqPractice.Tests
             customerService.Create2(customerToCreateDto);
 
             // Assert
+            // Jehetu amra Setup emn vabe korsi jate repo er Save call hoe, so amader verify korte hobe je whether the Save method of repo is getting called or not
             mockRepository.Verify(y => y.Save(It.IsAny<Customer>()));
             // In the arrange, if we used : 
             // mockRepository.Setup(x => x.Save(It.IsAny<Customer>())); , then in Assert, we could use : 
             // mockRepository.VerifyAll() . This is becuase we have already made the setup for Save(). we now just need to verify all.
+
+            //**** SUMMARY : 
+            // amder function er specific kisu logic er karone onno function call hocche kina shetar verification.
         }
 
         [TestMethod]
@@ -187,8 +206,8 @@ namespace MoqPractice.Tests
             var mockFullNameBuilder = new Mock<ICustomerFullNameBuilder>();
 
             // This setup means : we expect this method only to be called and we don't care about the parameters. We just wanna make sure it's get called
-            mockFullNameBuilder.Setup(
-                x => x.From(It.IsAny<string>(), It.IsAny<string>()));
+            //mockFullNameBuilder.Setup(
+               // x => x.From(It.IsAny<string>(), It.IsAny<string>()));
 
             var customerService = new CustomerService(
                 mockRepository.Object, mockFullNameBuilder.Object);
@@ -207,17 +226,91 @@ namespace MoqPractice.Tests
                 )
             ));
 
+            // **** VVI Note
+            // Arrange e :
+            // "mockFullNameBuilder.Setup(x => x.From(It.IsAny<string>(), It.IsAny<string>()));"
+            // above line ta add kora hoe nai. Cause abov line mane hocche oi method ta just call.
+            // but amara Verify korte chacchi je, ei method tar parameter gula match kore kina
+            // So, Setup na kore direct verification ei test kora hoise.
+
             // *VVI Note
             //***Now jodi main function er :
-            // _customerFullName.From(
-              //  customerToCreateDto.FirstName,
-               // customerToCreateDto.LastName)
+            // "_customerFullName.From(customerToCreateDto.FirstName, customerToCreateDto.LastName)"
             // er bodole : 
-            // _customerFullName.From(
-            //  "abcd",
-            // customerToCreateDto.LastName)
+            // "_customerFullName.From("abcd",customerToCreateDto.LastName)"
             // tahole, ei test case fail korbe. Cuz amra assert e bole disi only work for Paramaeters that are passed in from CustomerTOCreateDto object
         }
+
+        #region Verify All method invocation
+        [TestMethod]
+        public void Hellow1_Example_Of_Loose_Mocking_all_methods_should_be_invoked()
+        {
+            var mockRepository = new Mock<ICustomerRepository>();
+            var mockFullNameBuilder = new Mock<ICustomerFullNameBuilder>();
+
+            mockRepository.Setup(x => x.Save(It.IsAny<Customer>()));
+            mockFullNameBuilder.Setup(x => x.From(
+                It.IsAny<string>(), It.IsAny<string>()
+                )).Returns("abc").Verifiable();
+            // verifable er mane hocche, ei method call jodi SUT theke remove kore dei and Assert e verify kori, then case fail korbe
+            // verifiable thakle ei method call obosshoi SUT te thakbe.
+
+            var customerService = new CustomerService(mockRepository.Object, mockFullNameBuilder.Object);
+            customerService.Create4(new CustomerToCreateDto());
+
+            mockRepository.Verify(x => x.Save(It.IsAny<Customer>()));
+            //mockRepository.VerifyAll(); dile ar labmda lage na
+
+
+
+            mockFullNameBuilder.VerifyAll();
+
+            // ***** SUMMARY
+            // check whether both methods are getting called or not
+        }
+
+        [TestMethod]
+        public void Hellow1_Example_of_Strict_Mocking_all_methods_should_be_invoked()
+        {
+            var mockRepository = new Mock<ICustomerRepository>(MockBehavior.Strict);
+            var mockFullNameBuilder = new Mock<ICustomerFullNameBuilder>(MockBehavior.Strict);
+
+            mockRepository.Setup(x => x.Save(It.IsAny<Customer>()));
+            mockFullNameBuilder.Setup(x => x.From(
+                It.IsAny<string>(), It.IsAny<string>()
+                )).Returns("abc");
+
+            var customerService = new CustomerService(mockRepository.Object, mockFullNameBuilder.Object);
+            customerService.Create4(new CustomerToCreateDto());
+
+            mockRepository.VerifyAll();
+        }
+
+        [TestMethod]
+        public void MoreNiceVersion_all_methods_should_be_invoked()
+        {
+            var mockFactory = new MockRepository(MockBehavior.Loose) { DefaultValue = DefaultValue.Mock };
+
+            var mockRepository = mockFactory.Create<ICustomerRepository>();
+            var mockFullNameBuilder = mockFactory.Create<ICustomerFullNameBuilder>();
+
+            mockRepository.Setup(
+                x => x.Save(It.IsAny<Customer>()))
+                .Verifiable();
+            mockFullNameBuilder.Setup(
+                x => x.From(
+                    It.IsAny<string>(), It.IsAny<string>()
+                    ))
+                    .Returns(() => null)
+                    .Verifiable();
+
+            var customerService = new CustomerService(mockRepository.Object, mockFullNameBuilder.Object);
+
+            customerService.Create4(new CustomerToCreateDto());
+
+            mockFactory.Verify();
+        }
+        #endregion
 
         // Argument and Execution flow control
         [TestMethod]

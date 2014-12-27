@@ -102,13 +102,14 @@ namespace MoqPractice
 
         public void Create4(CustomerToCreateDto customerToCreateDto)
         {
-            var fullName = _customerFullName.From(
-                customerToCreateDto.FirstName,
-                customerToCreateDto.LastName);
+            string fullName = string.Empty;
+             fullName = _customerFullName.From(
+               customerToCreateDto.FirstName,
+               customerToCreateDto.LastName);
 
             var customer = new Customer(fullName);
 
-            _customerRepository.Save(customer);
+            //_customerRepository.Save(customer);
         }
 
         public void Create5(CustomerToCreateDto customerToCreateDto)
