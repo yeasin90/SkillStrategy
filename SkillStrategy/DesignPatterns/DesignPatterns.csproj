@@ -39,7 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdapterPattern\Class1.cs" />
     <Compile Include="Badge.cs" />
+    <Compile Include="FlyweightPattern\References.cs" />
     <Compile Include="IBadgeService.cs" />
     <Compile Include="BadgeRules\TestBadgeRules\ITestBadges.cs" />
     <Compile Include="BadgeRules\ICompleteEvaluator.cs" />
@@ -75,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BadgeRules\ContestBadgeRules\" />
+    <Folder Include="BridgePattern\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

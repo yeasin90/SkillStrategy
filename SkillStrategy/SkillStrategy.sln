@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "DesignPat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillStrategy.Test", "SkillStrategy.Test\SkillStrategy.Test.csproj", "{4C4EA99D-053E-47AC-B39C-8C25B12B20A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoqPractice", "MoqPractice\MoqPractice.csproj", "{1AFC523B-9D6B-411C-9AD4-F9FD91B7DDD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoqPractice.Tests", "MoqPractice.Tests\MoqPractice.Tests.csproj", "{397550A4-5FF6-4812-A17C-9949CA8138A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,14 @@ Global
 		{4C4EA99D-053E-47AC-B39C-8C25B12B20A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C4EA99D-053E-47AC-B39C-8C25B12B20A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C4EA99D-053E-47AC-B39C-8C25B12B20A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AFC523B-9D6B-411C-9AD4-F9FD91B7DDD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AFC523B-9D6B-411C-9AD4-F9FD91B7DDD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AFC523B-9D6B-411C-9AD4-F9FD91B7DDD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AFC523B-9D6B-411C-9AD4-F9FD91B7DDD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{397550A4-5FF6-4812-A17C-9949CA8138A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397550A4-5FF6-4812-A17C-9949CA8138A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397550A4-5FF6-4812-A17C-9949CA8138A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397550A4-5FF6-4812-A17C-9949CA8138A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
