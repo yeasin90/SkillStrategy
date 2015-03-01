@@ -41,6 +41,8 @@
   <ItemGroup>
     <Compile Include="AdapterPattern\Class1.cs" />
     <Compile Include="Badge.cs" />
+    <Compile Include="DeepShalowCopy\DeepCopy.cs" />
+    <Compile Include="DeepShalowCopy\ShalowCopy.cs" />
     <Compile Include="FlyweightPattern\References.cs" />
     <Compile Include="IBadgeService.cs" />
     <Compile Include="BadgeRules\TestBadgeRules\ITestBadges.cs" />
